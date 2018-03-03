@@ -63,6 +63,31 @@
           Монопады для селфи
         </li>
      </ul>
+     <section class="filters">
+       <h2 class="filters-title">Фильтр:</h2>
+       <form>
+         <div class="filter-by-price">
+             <label for="filter-price-range">Стоимость</label>
+             0<input type="range" id="filter-price-range"
+             name="filter_price_range" min="0" max="10000" step="1">10 000
+         </div>
+
+         <div class="filter-by-color">
+           <b>Цвет</b>
+           <p><label><input type="checkbox" checked>Черный</label></p>
+           <p><label><input type="checkbox">Белый</label></p>
+           <p><label><input type="checkbox" checked>Синий</label></p>
+           <p><label><input type="checkbox" checked>Красный</label></p>
+           <p><label><input type="checkbox">Розовый</label></p>
+         </div>
+         <div class="filter-availability-blutooth">
+           <b>Blutooth</b>
+           <p><label><input type="checkbox" checked>Есть</label></p>
+           <p><label><input type="checkbox">Нет</label></p>
+         </div>
+         <button class="button">ПОКАЗАТЬ</button>
+       </form>
+     </section>
    </main>
   </body>
 </html>
