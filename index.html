@@ -10,7 +10,10 @@
         <a class="main-header-logo">
           <img width="110" height="32" src="http://placehold.it/110x32" alt="logo">
         </a>
-        <p class="search"><label>Поиск по сайту<input type="search"></label></p>
+        <form class="search" method="post" action="https://echo.htmlacademy.ru">
+            <label>Поиск по сайту<input type="search"></label>
+            <button type="submit">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="user-navigation-item">
             <a href="#">Войти</a>
@@ -112,13 +115,13 @@
         </ul>
         <ul class="controls-list">
           <li class="control">
-            <label><input type="radio"></label>
+            <label><input type="radio" name="set-slide"></label>
           </li>
           <li class="control">
-            <label><input type="radio"></label>
+            <label><input type="radio" name="set-slide"></label>
           </li>
           <li class="control">
-            <label><input type="radio"></label>
+            <label><input type="radio" name="set-slide"></label>
           </li>
         </ul>
       </section>
@@ -172,9 +175,9 @@
       <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
         <ul class="services-list">
-          <li class="service"><label><input type="radio">Доставка</label></li>
-          <li class="service"><label><input type="radio">Гарантия</label></li>
-          <li class="service"><label><input type="radio">Кредит</label></li>
+          <li class="service"><label><input type="radio" name="service">Доставка</label></li>
+          <li class="service"><label><input type="radio" name="service">Гарантия</label></li>
+          <li class="service"><label><input type="radio" name="service">Кредит</label></li>
         </ul>
         <ul class="services-tabs">
           <li class="service-tab">
@@ -249,7 +252,7 @@
         </p>
         <a class="map-popup">
           <img src="img/map.png"  width="560" height="222"
-          alt="адрес на карте">
+          alt="улица Строителей, 15">
         </a>
         <a class="button" href="#">Напишите нам</a>
       </section>
@@ -297,12 +300,14 @@
     </footer>
     <section class="modal modal-write-us">
       <h2 class="visually-hidden">Напишите нам</h2>
-      <form>
+      <form class="write-us"  method="post" action="https://echo.htmlacademy.ru">
         <p class="half-width">
-          <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="name"></label>
+          <label for="write-us-name">Ваше имя:</label>
+          <input id="write-us-name" type="text" placeholder="Имя Фамилия" name="name">
         </p>
         <p class="half-width">
-          <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="e-mail"></label>
+          <label for="write-us-email">Ваш e-mail:</label>
+          <input class="write-us-email" type="write-us-email" placeholder="email@example.com" name="e-mail">
         </p>
         <p class="full-width">
           <label>
@@ -310,13 +315,13 @@
           name="text"></textarea>
         </label>
         </p>
-        <button class="button button-send">Отправить</button>
+        <button class="button button-send" type="submit">Отправить</button>
       </form>
-      <span class="button-close"></span>
+      <button class="button-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-map">
       <h2 class="visually-hidden">Карта</h2>
-      <span class="button-close"></span>
+      <button class="button-close" type="button">Закрыть</button>
     </section>
   </body>
 </html>

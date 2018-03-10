@@ -10,7 +10,10 @@
         <a class="main-header-logo" href="index.html">
           <img width="110" height="32" src="http://placehold.it/110x32" alt="logo">
         </a>
-        <p class="search"><label>Поиск по сайту<input type="search"></label></p>
+        <form class="search" method="post" action="https://echo.htmlacademy.ru">
+            <label>Поиск по сайту<input type="search"></label>
+            <button type="submit">Найти</button>
+        </form>
         <ul class="user-navigation">
           <li class="user-navigation-item">
             <a href="#">Валентин Петухов</a>
@@ -65,27 +68,48 @@
      </ul>
      <section class="filters">
        <h2 class="filters-title">Фильтр:</h2>
-       <form>
-         <div class="filter-by-price">
-             <label for="filter-price-range">Стоимость</label>
-             0<input type="range" id="filter-price-range"
-             name="filter_price_range" min="0" max="10000" step="1">10 000
-         </div>
-
-         <div class="filter-by-color">
-           <b>Цвет</b>
-           <p><label><input type="checkbox" checked>Черный</label></p>
-           <p><label><input type="checkbox">Белый</label></p>
-           <p><label><input type="checkbox" checked>Синий</label></p>
-           <p><label><input type="checkbox" checked>Красный</label></p>
-           <p><label><input type="checkbox">Розовый</label></p>
-         </div>
-         <div class="filter-availability-blutooth">
-           <b>Blutooth</b>
-           <p><label><input type="checkbox" checked>Есть</label></p>
-           <p><label><input type="checkbox">Нет</label></p>
-         </div>
-         <button class="button">Показать</button>
+       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+         <fieldset class="filter-by-price">
+           <legend class="visually-hidden">Фильтр по стоймости</legend>
+           <label for="filter-price-range">Стоимость</label>
+           0<input id="filter-price-range" type="range"
+           name="filter_price_range" min="0" max="10000" step="100">10 000
+         </fieldset>
+         <fieldser class="filter-by-color">
+           <legend>Цвет</legend>
+           <p>
+             <input id="color-black" type="checkbox" checked>
+             <label for="color-black">Черный</label>
+           </p>
+           <p>
+             <input id="color-white" type="checkbox">
+             <label for="color-white">Белый</label>
+           </p>
+           <p>
+             <input id="color-blue" type="checkbox" checked>
+             <label for="color-blue">Синий</label>
+           </p>
+           <p>
+             <input id="color-red" type="checkbox" checked>
+             <label for="color-red">Красный</label>
+           </p>
+           <p>
+             <input id="color-pink" type="checkbox">
+             <label for="color-pink">Розовый</label>
+           </p>
+         </fieldset>
+         <fieldset class="filter-availability-blutooth">
+           <legend>Blutooth</legend>
+           <p>
+             <input id="blutooth-is-available" type="radio" name="blutoot-radio-button" checked>
+             <label for="blutooth-is-available">Есть</label>
+           </p>
+           <p>
+             <input id="blutooth-is-not-available" type="radio"  name="blutoot-radio-button">
+             <label for="blutooth-is-not-available">Нет</label>
+           </p>
+         </fieldset>
+         <button class="button" type="submit">Показать</button>
        </form>
      </section>
      <section class="sort-products">
@@ -230,12 +254,14 @@
    </footer>
    <section class="modal modal-write-us">
      <h2 class="visually-hidden">Напишите нам</h2>
-     <form>
+     <form class="write-us"  method="post" action="https://echo.htmlacademy.ru">
        <p class="half-width">
-         <label>Ваше имя:<input type="text" placeholder="Имя Фамилия" name="name"></label>
+         <label for="write-us-name">Ваше имя:</label>
+         <input id="write-us-name" type="text" placeholder="Имя Фамилия" name="name">
        </p>
        <p class="half-width">
-         <label>Ваш e-mail:<input type="email" placeholder="email@example.com" name="e-mail"></label>
+         <label for="write-us-email">Ваш e-mail:</label>
+         <input class="write-us-email" type="write-us-email" placeholder="email@example.com" name="e-mail">
        </p>
        <p class="full-width">
          <label>
@@ -243,13 +269,13 @@
          name="text"></textarea>
        </label>
        </p>
-       <button class="button button-send">Отправить</button>
+       <button class="button button-send" type="submit">Отправить</button>
      </form>
-     <span class="button-close"></span>
+     <button class="button-close" type="button">Закрыть</button>
    </section>
    <section class="modal modal-map">
      <h2 class="visually-hidden">Карта</h2>
-     <span class="button-close"></span>
+     <button class="button-close" type="button">Закрыть</button>
    </section>
   </body>
 </html>
