@@ -19,7 +19,7 @@
                 <input id="search-field" class="search-field" type="search" placeholder="Поиск по сайту">
                 <button class="btn-search" type="submit">Найти</button>
             </form>
-            <ul class="user-navigation">
+            <ul class="user-navigation header-user-navigation">
               <li class="user-navigation-item header-profile-item">
                 <a class="user-navigation-link header-profile-link" href="#">Валентин Петухов</a>
               </li>
@@ -37,14 +37,16 @@
           <ul class="site-navigation">
             <li class="site-navigation-item header-catalog-item">
               <a class="site-navigation-link header-catalog-link" href="catalog.html">Каталог товаров</a>
-              <ul class="site-navigation-lvl2">
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Виртуальная реальность</a></li>
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Фитнес-браслеты</a></li>
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Квадрокоптеры</a></li>
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Монопады для селфи</a></li>
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Умные часы</a></li>
-                <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Экшн-камеры</a></li>
-              </ul>
+              <div class="lvl2-container">
+                <ul class="site-navigation-lvl2">
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Виртуальная реальность</a></li>
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Фитнес-браслеты</a></li>
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Квадрокоптеры</a></li>
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Монопады для селфи</a></li>
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Умные часы</a></li>
+                  <li class="site-navigation-item header-catalog-item lvl2"><a class="site-navigation-link lvl2" href="#">Экшн-камеры</a></li>
+                </ul>
+              </div>
             </li>
             <li class="site-navigation-item current">
               <a class="site-navigation-link" href="#">Доставка</a>
@@ -271,10 +273,10 @@
          </div>
        </div>
        <div class="footer-middle index-columns">
-         <p class="contact-address">
+         <p class="footer-contact-address">
            г. Москва, ул. Строителей, 15
          </p>
-         <ul class="site-navigation">
+         <ul class="site-navigation footer">
            <li class="site-navigation-item current">
              <a class="site-navigation-link" href="#">Доставка</a>
            </li>
