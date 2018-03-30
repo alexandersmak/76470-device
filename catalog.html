@@ -82,10 +82,21 @@
              <h2 class="filters-title">Фильтр:</h2>
              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                <fieldset class="filter-by-price">
-                 <legend class="visually-hidden">Фильтр по стоймости</legend>
-                 <label class="price-range-label" for="filter-price-range">Стоимость</label>
-                 0<input id="filter-price-range" type="range"
-                 name="filter_price_range" min="0" max="10000" step="100">10 000
+                 <legend>Cтоймость</legend>
+                 <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div>
+                    </div>
+                    <div class="price-controls">
+                      <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                      <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                    </div>
+                  </div>
+
                </fieldset>
                <fieldset class="filter-by-color">
                  <legend>Цвет</legend>
@@ -154,7 +165,7 @@
                <li class="sort-by-popularity"><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-by-order">
-               <li class="sort-by-descending"><a class="current descending-link" href="#"><span class="visually-hidden">По убыванию</span></a></li>
+               <li class="sort-by-descending"><a class="descending-link" href="#"><span class="visually-hidden">По убыванию</span></a></li>
                <li class="sort-by-ascending"><a class="current ascending-link" href="#"><span class="visually-hidden">По возрастанию</span></a></li>
            </ul>
            </section>
@@ -183,7 +194,7 @@
              <li class="catalog-item">
                <h3 class="catalog-item-title">
                  <a class="catalog-item-link" href="catalog-item.html">
-                   Профессиональная селфи-палка
+                   Профессиональная <br>селфи-палка
                  </a>
                </h3>
                <p class="catalog-item-price">
@@ -302,8 +313,8 @@
          </p>
        </div>
      </div>
-     </div>
    </footer>
+   <a class="button btn-write-us" style="display:none;" href="#">Напишите нам</a>
    <section class="modal modal-write-us">
      <h2 class="visually-hidden">Напишите нам</h2>
      <form class="write-us-form"  method="post" action="https://echo.htmlacademy.ru">
@@ -325,11 +336,13 @@
      </form>
      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
    </section>
+   <a class="btn-map-popup" style="display:none;"  href="#">
    <section class="modal modal-map">
      <h2 class="visually-hidden">Карта</h2>
      <img src="img/map-big.jpg" width="960" height="559"
      alt="улица Строителей, 15">
      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
    </section>
+   <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
