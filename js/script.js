@@ -55,37 +55,6 @@ map_close.addEventListener("click", function(evt) {
   evt.preventDefault();
   map_popup.classList.remove("show");
 });
-var header_catalog_item = document.querySelector(".header-catalog-item");
-var header_link = document.querySelector(".header-catalog-link");
-var site_navigation_list = document.querySelector(".site-navigation-lvl2");
-var lvl2_container = document.querySelector(".lvl2-container");
-var mouseleave1 = true;
-var mouseleave2 = true;
-header_link.addEventListener("mouseenter", function(evt) {
-  evt.preventDefault();
-  mouseleave1 = false;
-  header_link.classList.add("show");
-});
-header_catalog_item.addEventListener("mouseleave", function(evt) {
-  evt.preventDefault();
-  mouseleave1 = true;
-  check_leave();
-});
-lvl2_container.addEventListener("mouseenter", function(evt) {
-  evt.preventDefault();
-  mouseleave1 = true;
-  mouseleave2 = false;
-});
-lvl2_container.addEventListener("mouseleave", function(evt) {
-  evt.preventDefault();
-  mouseleave2 = true;
-  check_leave();
-});
-function check_leave() {
-  if (mouseleave1 && mouseleave2) {
-    header_link.classList.remove("show");
-  }
-}
 //section popular-products
 var buttons = document.querySelectorAll(".products-switches-btn");
 var sliders = document.querySelectorAll(".product-list-item");
