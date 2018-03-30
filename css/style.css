@@ -1574,14 +1574,14 @@ form.filter {
   color:#f7e184;
   background-color: #000000;
 }
-.service:active .service-btn,
+/*.service:active .service-btn,*/
 .service.active .service-btn {
   color:#f7e184;
   background-color: transparent;
   background-image: none;
 }
-.service.active,
-.service:active  {
+/*.service:active */
+.service.active {
   background-color: black;
 }
 
