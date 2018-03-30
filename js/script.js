@@ -5,7 +5,6 @@ var form = popup.querySelector("form");
 var username = popup.querySelector("[type=text]");
 var email = popup.querySelector("[name=e-mail]");
 var message = popup.querySelector("[name=text]");
-//var name = popup.querySelector("input[type=text]");
 var isStorageSupport = true;
 var storage_name = "";
 try {
@@ -39,6 +38,7 @@ form.addEventListener("submit", function(evt) {
   if (!name.value || !email.value || !message.value) {
     evt.preventDefault();
     console.log("Нужно ввести логин и пароль");
+    popup.classList.add("modal-error");
   } else {
     localStorage.setItem("name", name.value);
     localStorage.setItem("email", email.value);

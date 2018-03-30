@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="inner">
@@ -322,24 +322,26 @@
       </p>
       <p class="half-width">
         <label for="write-us-email">Ваш e-mail:</label>
-        <input id="write-us-email" class="half-width-input" type="email" placeholder="email@example.com" name="e-mail">
+        <input id="write-us-email" class="half-width-input" type="email" placeholder="email@example.com" name="e-mail" required>
       </p>
       <p class="full-width">
         <label for="write-us-message">Текст письма</label>
-        <textarea id="write-us-message" class="write-us-message" rows="7" placeholder="В свободной форме" name="text"></textarea>
+        <textarea id="write-us-message" class="write-us-message" rows="7" placeholder="В свободной форме" name="text" required></textarea>
 
       </p>
       <button class="button button-send" type="submit">Отправить</button>
     </form>
     <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
   </section>
-  <a class="btn-map-popup" style="display:none;" href="#">
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Карта</h2>
-      <img src="img/map-big.jpg" width="960" height="559" alt="улица Строителей, 15">
-      <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
-    </section>
-    <script type="text/javascript" src="js/script.js"></script>
+  <a class="btn-map-popup" style="display:none;"  href="#">
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Карта</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBetyIHH1B" width="960" height="559" frameborder="0"></iframe>
+    <img class="visually-hidden" src="img/map-big.jpg" width="960" height="559" alt="улица Строителей, 15">
+    <button class="button-close" type="button"><span class="visually-hidden">Закрыть</span></button>
+  </section>
+  <script type="text/javascript" src="js/script.js"></script>
+  <!--<script type="text/javascript" src="js/script.min.js"></script>-->
 </body>
 
 </html>
