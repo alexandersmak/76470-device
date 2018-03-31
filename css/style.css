@@ -315,6 +315,12 @@ a {
 .site-navigation .site-navigation-link:active {
   color: rgba(0,0,0,0.3);
 }
+.main-footer .site-navigation-link:active {
+  opacity: 0.3;
+}
+.main-footer .site-navigation-link:hover {
+  color: rgba(255,255,255,0.6);
+}
 .user-navigation,
 .site-navigation,
 .site-navigation ul {
