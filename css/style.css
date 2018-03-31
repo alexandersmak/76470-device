@@ -208,6 +208,7 @@ a {
   right: 0;
   top: 50%;
   margin-top: -8px;
+  opacity: 0.3;
 }
 .footer-item-contacts {
   margin-left: 34px;
@@ -302,13 +303,17 @@ a {
   .site-navigation-link.lvl2 {
   line-height: 36px;
 }
-.user-navigation .user-navigation-link:hover,
-.site-navigation .site-navigation-link:hover {
+.user-navigation .user-navigation-link:hover {
   opacity: 0.6;
 }
-.user-navigation .user-navigation-link:active,
-.site-navigation .site-navigation-link:active {
+.user-navigation .user-navigation-link:active {
   opacity: 0.3;
+}
+.site-navigation .site-navigation-link:hover {
+  color: rgba(0,0,0,0.6);
+}
+.site-navigation .site-navigation-link:active {
+  color: rgba(0,0,0,0.3);
 }
 .user-navigation,
 .site-navigation,
@@ -493,6 +498,9 @@ a {
   margin: 0;
   margin-bottom: 10px;
 }
+.filter-by-color p:nth-child(3) {
+  margin-bottom: 9px;
+}
 .filter-by-color p:last-child {
   margin-bottom: 38px;
 }
@@ -506,7 +514,7 @@ a {
 .filter-availability-blutooth legend {
   letter-spacing: 2px;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 .filter-availability-blutooth p {
   margin: 0;
@@ -667,6 +675,31 @@ form.filter {
   font-weight: bold;
   color: #000000;
   letter-spacing: 0.2px;
+  vertical-align: top;
+}
+.catalog-item:nth-child(1) .catalog-item-link {
+  letter-spacing: 0.3px;
+}
+.catalog-item:nth-child(1) .catalog-item-image {
+  margin-bottom: 20px;
+}
+.catalog-item:nth-child(2) .catalog-item-link {
+  letter-spacing: 0.4px;
+}
+.catalog-item:nth-child(2) .catalog-item-image {
+  margin-bottom: 19px;
+}
+.catalog-item:nth-child(3) .catalog-item-link {
+  letter-spacing: 0.1px;
+}
+.catalog-item:nth-child(3) .catalog-item-image{
+  margin-bottom: 20px;
+}
+.catalog-item:nth-child(4) .catalog-item-link {
+  letter-spacing: 0.4px;
+}
+.catalog-item:nth-child(4) .catalog-item-image{
+  margin-bottom: 19px;
 }
 .catalog-item-price span {
   font-family: "gilroy", Arial, sans-serif;
@@ -1019,7 +1052,7 @@ form.filter {
   right: 2px;
 }
 .main-footer .footer-top {
-  margin-bottom: 18px;
+  margin-bottom: 16px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -1039,7 +1072,7 @@ form.filter {
 .main-footer .footer-input-item {
   margin-left: auto;
   margin-right: 44px;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 .inner .footer-input-item {
   margin-left: auto;
@@ -1048,7 +1081,7 @@ form.filter {
 }
 .main-footer .footer-compare-item {
   margin-right: 40px;
-  padding-top: 8px;
+  padding-top: 6px;
 }
 .inner .footer-compare-item {
   margin-right: 44px;
@@ -1562,7 +1595,7 @@ form.filter {
   align-items: center;
   position: absolute;
   width: 80px;
-  right: 21px;
+  right: 23px;
   bottom: 132px;
 }
 .product-description {
@@ -1596,18 +1629,8 @@ form.filter {
   width: 12px;
   height: 12px;
 }
-.products-switches-btn.checked::after {
-  content: "";
-  position: absolute;
-  width: 6px;
-  height: 6px;
+.products-switches-btn.checked {
   background-image: url("../img/slider-button-checked.svg");
-  background-repeat: no-repeat;
-  background-size: 6px 6px;
-  top: 50%;
-  left: 50%;
-  margin-left: -3px;
-  margin-top: -3px;
 }
 .product-info {
   margin: 0;
@@ -1809,7 +1832,7 @@ form.filter {
 }
 .about-us,
 .contacts {
-  padding-top: 52px;
+  padding-top: 53px;
 }
 .about-us h2,
 .contacts h2 {
@@ -1823,7 +1846,7 @@ form.filter {
   font-weight: bold;
   color: #000000;
   position: relative;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
 }
 .about-us h2::before,
 .contacts h2::before {
@@ -1841,7 +1864,7 @@ form.filter {
 .btn-map-popup {
   display: inline-block;
   vertical-align: baseline;
-  margin-bottom: 69px;
+  margin-bottom: 66px;
 }
 .about-us {
   width: 469px;
@@ -1863,13 +1886,18 @@ form.filter {
 .about-us p,
 .contacts p {
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 40px;
+}
+.contacts p {
+  letter-spacing: 0.1px;
 }
 .about-us p:first-of-type {
   margin-bottom: 30px;
+  letter-spacing: 0.1px;
 }
 .about-us p:last-of-type {
   margin-bottom: 66px;
+  letter-spacing: -0.1px;
 }
 .about-us .button {
   padding: 11px 20px;
@@ -2012,7 +2040,7 @@ form.filter {
   vertical-align: middle;
 }
 .contacts .btn-write-us {
-  padding: 11px 41px;
+  padding: 11px 40px;
 }
 .write-us-form {
   display: -webkit-box;
