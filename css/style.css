@@ -2096,6 +2096,9 @@ form.filter {
   -webkit-box-shadow: 0 2px 12px 4px rgba(122, 122, 122, 0.1);
   box-shadow: 0 2px 12px 4px rgba(122, 122, 122, 0.1);
 }
+.modal-map iframe {
+  border: 0px;
+}
 .modal-map img {
   width: 960px;
   height: 559px;
