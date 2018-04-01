@@ -87,13 +87,13 @@ for (var i = 0; i < service_buttons.length; i++) {
       for (var i = 0; i < service_buttons.length; i++) {
         if (service_buttons[i].parentElement.classList.contains("active")) {
           service_buttons[i].parentElement.classList.remove("active");
-          tabs[i].classList.remove("show");
+          tabs[i].classList.add("visually-hidden");
         }
       }
       this.parentElement.classList.add("active");
       for (var i = 0; i < buttons.length; i++) {
         if (service_buttons[i].parentElement.classList.contains("active")) {
-          tabs[i].classList.add("show");
+          tabs[i].classList.remove("visually-hidden");
         }
       }
     }

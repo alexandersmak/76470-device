@@ -22,41 +22,45 @@
             <button class="btn-search" type="submit">Найти</button>
           </form>
           <ul class="user-navigation header-user-navigation">
-            <li class="user-navigation-item header-profile-item">
+            <li class="user-navigation-item header header-profile-item">
               <a class="user-navigation-link header-profile-link" href="#">Валентин Петухов</a>
             </li>
-            <li class="user-navigation-item header-exit-item">
+            <li class="user-navigation-item header header-exit-item">
               <a class="user-navigation-link header-exit-link" href="#">Выйти</a>
             </li>
-            <li class="user-navigation-item header-compare-item">
+            <li class="user-navigation-item header header-compare-item">
               <a class="user-navigation-link header-compare-link" href="#">Сравнить</a>
             </li>
-            <li class="user-navigation-item header-cart-item">
+            <li class="user-navigation-item header header-cart-item">
               <a class="user-navigation-link header-cart-link" href="#">Корзина</a>
             </li>
           </ul>
         </div>
         <ul class="site-navigation">
-          <li class="site-navigation-item header-item-catalog">
+          <li class="site-navigation-item header header-item-catalog">
             <a class="site-navigation-link header-catalog-link" href="catalog.html">Каталог товаров</a>
             <div class="lvl2-container">
               <ul class="site-navigation-lvl2">
                 <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Виртуальная реальность</a></li>
-                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Фитнес-браслеты</a></li>
-                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Квадрокоптеры</a></li>
-                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Моноподы для селфи</a></li>
-                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Умные часы</a></li>
+                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Монопады для селфи</a></li>
                 <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Экшн-камеры</a></li>
+              </ul>
+              <ul class="site-navigation-lvl2">
+                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Фитнес-браслеты</a></li>
+                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Умные часы</a></li>
+              </ul>
+              <ul class="site-navigation-lvl2">
+                <li class="site-navigation-item header-item-catalog lvl2"><a class="site-navigation-link lvl2" href="#">Квадрокоптеры</a></li>
               </ul>
             </div>
           </li>
-          <li class="site-navigation-item header-item-delivery">
+          <li class="site-navigation-item header header-item-delivery">
             <a class="site-navigation-link" href="#">Доставка</a>
           </li>
-          <li class="site-navigation-item header-item-warranty">
+          <li class="site-navigation-item header header-item-warranty">
             <a class="site-navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="site-navigation-item header-item-contacts">
+          <li class="site-navigation-item header header-item-contacts">
             <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
@@ -161,9 +165,9 @@
         <div class="right-column">
           <section class="sort-products">
             <h2 class="sort-products-title">Сортировка:</h2>
-            <ul class="sort-by-type">
+            <ul class="sort-by-type list">
               <li class="sort-by-price "><a class="current" href="#">По цене</a></li>
-              <li class="sort-by-type"><a href="#">По типу</a></li>
+              <li class="sort-by-type item"><a href="#">По типу</a></li>
               <li class="sort-by-popularity"><a href="#">По популярности</a></li>
             </ul>
             <ul class="sort-by-order">
@@ -181,7 +185,7 @@
                  </a>
                 </h3>
                 <p class="catalog-item-price">
-                  <span>500 руб.</span>
+                  <span class="item-price-element">500 руб.</span>
                 </p>
                 <p class="catalog-item-image">
                   <img width="360" height="380" src="img/product-item-1.jpg" alt="Любительская селфи-палка">
@@ -199,7 +203,7 @@
                  </a>
                 </h3>
                 <p class="catalog-item-price">
-                  <span>1 500 руб.</span>
+                  <span class="item-price-element">1 500 руб.</span>
                 </p>
                 <p class="catalog-item-image">
                   <img width="360" height="380" src="img/product-item-2.jpg" alt="Профессиональная селфи-палка">
@@ -217,7 +221,7 @@
                  </a>
                 </h3>
                 <p class="catalog-item-price">
-                  <span>2 500 руб.</span>
+                  <span class="item-price-element">2 500 руб.</span>
                 </p>
                 <p class="catalog-item-image">
                   <img width="360" height="380" src="img/product-item-3.jpg" alt="Непотопляемая селфи-палка">
@@ -235,7 +239,7 @@
                  </a>
                 </h3>
                 <p class="catalog-item-price">
-                  <span>4 900 руб.</span>
+                  <span class="item-price-element">4 900 руб.</span>
                 </p>
                 <p class="catalog-item-image">
                   <img width="360" height="380" src="img/product-item-4.jpg" alt="Селфи-палка «Следуй за мной»">
@@ -266,16 +270,16 @@
              Device
            </a>
           <ul class="user-navigation footer">
-            <li class="user-navigation-item footer-profile-item">
+            <li class="user-navigation-item footer footer-profile-item">
               <a class="user-navigation-link footer footer-profile-link" href="#">Валентин Петухов</a>
             </li>
-            <li class="user-navigation-item footer-exit-item">
+            <li class="user-navigation-item footer footer-exit-item">
               <a class="user-navigation-link footer footer-exit-link" href="#">Выйти</a>
             </li>
-            <li class="user-navigation-item footer-compare-item">
+            <li class="user-navigation-item footer footer-compare-item">
               <a class="user-navigation-link footer footer-compare-link" href="#">Сравнить</a>
             </li>
-            <li class="user-navigation-item footer-cart-item">
+            <li class="user-navigation-item footer footer-cart-item">
               <a class="user-navigation-link footer footer-cart-link" href="#">Корзина</a>
             </li>
           </ul>
@@ -286,13 +290,13 @@
           г. Москва, ул. Строителей, 15
         </p>
         <ul class="site-navigation footer">
-          <li class="site-navigation-item footer-item-delivery">
+          <li class="site-navigation-item footer footer-item-delivery">
             <a class="site-navigation-link" href="#">Доставка</a>
           </li>
-          <li class="site-navigation-item footer-item-warranty">
+          <li class="site-navigation-item footer footer-item-warranty">
             <a class="site-navigation-link" href="#">Гарантия</a>
           </li>
-          <li class="site-navigation-item footer-item-contacts">
+          <li class="site-navigation-item footer footer-item-contacts">
             <a class="site-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
