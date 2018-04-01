@@ -1135,8 +1135,10 @@ form.filter {
   align-items: center;
 }
 .main-footer .footer-input-item {
-  margin-right: 44px;
   padding-top: 6px;
+}
+.user-navigation-item.footer:nth-child(1) {
+  margin-right: 44px;
 }
 .inner .footer-input-item {
   margin-left: auto;
@@ -1144,8 +1146,10 @@ form.filter {
   padding-top: 6px;
 }
 .main-footer .footer-compare-item {
-  margin-right: 40px;
   padding-top: 6px;
+}
+.user-navigation-item.footer:nth-child(2) {
+  margin-right: 40px;
 }
 .main-footer .footer-compare-link {
   padding-left: 19px;
@@ -1154,7 +1158,9 @@ form.filter {
   padding-top: 6px;
   margin-right: 2px;
 }
-
+.user-navigation-item.footer:nth-child(2) {
+  margin-right: 2px;
+}
 .user-navigation-link.footer::before {
   content: "";
   position: absolute;
@@ -1986,6 +1992,7 @@ form.filter {
 }
 .inner .user-navigation-item.footer:nth-child(2) {
   margin-left: 20px;
+  margin-right: 0px;
 }
 .inner .footer-compare-item {
   padding-top: 6px;
@@ -2004,6 +2011,7 @@ form.filter {
 }
 .inner .user-navigation-item.footer:nth-child(1) {
   margin-left: 1px;
+  margin-right: 0px;
 }
 .main-footer .user-navigation-link {
   font-family: "Open Sans", Arial, sans-serif;
